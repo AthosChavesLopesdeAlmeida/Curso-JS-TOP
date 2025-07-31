@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #2C3E50;
+  --secondary: #34495E;
+  --detail: #7F8C8D;
+  --background: #dfe2e3;
+  --accent: #2980B9;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#setup {
+  border: 1px solid var(--accent);
+  height: 80%;
+  width: 30%;
+  
+}
