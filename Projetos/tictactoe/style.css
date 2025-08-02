@@ -45,6 +45,7 @@ body {
 #rounds {
   width: 200px;
   height: 30px;
+  padding-left: 5px;
 }
 
 #startBtn {
@@ -63,6 +64,7 @@ body {
 #player1, #player2 {
   width: 200px;
   height: 30px;
+  padding-left: 5px;
 }
 
 #gameScreen {
@@ -92,6 +94,8 @@ body {
   text-align: center;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   display: none;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding-top: 20px;
 }
@@ -103,9 +107,23 @@ body {
   grid-template-rows: repeat(3, 60px);
   gap: 5px;
 }
+
 .cell {
   font-size: 2rem;
   width: 60px;
   height: 60px;
   cursor: pointer;
+}
+
+#playAgainBtn {
+  display: block;
+  margin: 20px auto;
+
+  cursor: pointer;
+  background-color: var(--accent);
+  color: var(--background);
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  width: 180px;
+  height: 40px;
 }

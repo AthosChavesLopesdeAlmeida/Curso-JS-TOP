@@ -13,17 +13,17 @@
     <h2>Jogo da Velha</h2>
     <div class="player">
     <label for="player1">Jogador 1:</label>
-    <input type="text" id="player1" placeholder="Nome do Jogador 1" required>
+    <input type="text" id="player1" placeholder="Nome do Jogador 1" required autocomplete="off">
    </div>
    
    <div class="player">
     <label for="player1">Jogador 2:</label>
-    <input type="text" id="player2" placeholder="Nome do Jogador 2" required>
+    <input type="text" id="player2" placeholder="Nome do Jogador 2" required autocomplete="off">
    </div>
   
    <div class="settings">
     <label for="rounds">Número de rodadas:</label>
-    <input type="number" id="rounds" min="1" max="49" step="2" required placeholder="Número de rodadas">
+    <input type="number" id="rounds" min="1" max="49" step="2" required placeholder="Número de rodadas" autocomplete="off">
 
     <button id="startBtn">Começar</button>
     <p class="error" id="error"></p>
@@ -36,7 +36,10 @@
       <div id="gameInfo">
         <h2 id="currentPlayer">Jogador 1</h2>
         <p id="roundInfo">Rodada: 1</p>
-        <p id="score">Placar: Jogador 1  (X) - 0 | Jogador 2 (O) - 0</p>
+         <div>
+           <p id="p1score"> Jogador 1 (X) - 0</p>
+           <p id="p2score">Jogador 2 (O) - 0</p>
+         </div>
         <p id="roundWinner"></p>
       </div>
       <div id="gameboard"></div>
@@ -46,6 +49,7 @@
   <div id="endScreen" >
     <h2 id="winnerIs"></h2>
     <p id="score"></p>
+    <button id="playAgainBtn">Jogar novamente</button>
   </div>
 
 
